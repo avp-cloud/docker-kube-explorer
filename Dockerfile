@@ -13,6 +13,7 @@ RUN groupadd -g 999 appuser && \
     useradd -r -u 999 -g appuser appuser
 RUN mkdir -p /home/appuser && chown -R appuser:appuser /home/appuser
 
+COPY entrypoint.sh /entrypoint.sh
 USER appuser
 WORKDIR /home/appuser
 
