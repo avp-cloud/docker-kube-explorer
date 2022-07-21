@@ -5,7 +5,7 @@ RUN apt-get update && apt-get upgrade -y && \
     rm -r /var/lib/apt/lists /var/cache/apt/archives
 
 # kube-explorer
-RUN curl -LO https://github.com/cnrancher/kube-explorer/releases/download/v0.2.8/kube-explorer-linux-amd64 && \
+RUN curl -LO https://github.com/cnrancher/kube-explorer/releases/download/v0.2.9/kube-explorer-linux-amd64 && \
     mv kube-explorer-linux-amd64 /kube-explorer && \
     chmod +x /kube-explorer
 
